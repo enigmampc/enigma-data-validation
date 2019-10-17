@@ -1,4 +1,4 @@
-# Enigma – Data Validation
+# Secret Data Validation
 
 This solution enables User A to upload a small dataset (email, phone number), 
 and also enables a second user to submit their own dataset (with the same fields).
