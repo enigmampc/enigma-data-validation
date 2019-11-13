@@ -28,7 +28,7 @@ contract('DataValidation', accounts => {
       web3,
       EnigmaContract.networks['4447'].address,
       EnigmaTokenContract.networks['4447'].address,
-      'http://localhost:3346',
+      'http://localhost:3333',
       {
         gas: 4712388,
         gasPrice: 100000000000,
@@ -36,6 +36,8 @@ contract('DataValidation', accounts => {
       },
     );
     enigma.admin();
+
+    enigma.setTaskKeyPair('cupcake');
 
     contractAddr = fs.readFileSync('test/data_validation.txt', 'utf-8');
   });
